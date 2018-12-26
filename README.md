@@ -10,6 +10,7 @@ The exercises in this workbook were designed for an ’Introduction to Python’
 complete beginners. The course material itself is only available to course participants. If you
 are a course participant, you can download the lectures slides, demonstrations, and additional
 supporting material either from the Google Classroom or from [here](https://www.astrofranzi.com/citylit-introduction-to-python/).
+
 While the exercises are best used in combination with the course, they can also be used for independent
 study. I made an effort to come up with exercises you won’t find in books or online, so
 hopefully you should be able to find new projects even if you’ve been using other online resources.
