@@ -36,6 +36,7 @@ If you are not taking the course, have a look at the tutorials listed below to l
 before tackling the exercises:
 * [tutorialspoint](https://www.tutorialspoint.com/python/)
 * [learnpython](https://www.learnpython.org/)
+
 The exercises themselves are divided into three levels of difficulty:
 * EASY: These exercises represent a gentle introduction to a new topic. I recommend starting with these exercises unless you already feel more confident.
 * MEDIUM: These exercises will ask you to apply what you’ve learned with some level of abstraction.
