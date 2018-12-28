@@ -1,0 +1,8 @@
+- apples
+- onions
+- potatoes
+- lemons
+- garlic
+- bread
+- pepper
+- orange juice

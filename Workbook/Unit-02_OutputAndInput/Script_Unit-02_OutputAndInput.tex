@@ -1,0 +1,287 @@
+\chapter{Output and Input}\label{CHAP_OutAndIn}
+
+\section{Difficulty: EASY}
+
+
+\subsubsection*{Exercise 2.E01}
+
+Determine the result of:
+\begin{enumerate}[label=(\alph*)]
+	\item $245 + 129$
+	\item $501 - 333$
+	\item $37 \cdot 11$
+	\item $99 / 33$
+	\item $15 + 777 \cdot 2$
+	\item $30 / (4 + 1)$
+\end{enumerate}
+
+
+\textit{Hints:
+Use addition, subtraction, multiplication, and division operators. Remember that brackets
+can change the order in which mathematical expressions are evaluated.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E02}
+Determine the primitive data type of the following expressions:
+\begin{enumerate}[label=(\alph*)]
+	\item {\code{100}}
+	\item {\code{0}}
+	\item {\code{“Python”}}
+	\item {\code{4.0}}
+	\item {\code{6 / 2}}
+	\item {\code{“2017”}}
+\end{enumerate}
+
+
+\textit{Hints:
+You can try to determine the primitive data type without using Python first. If you get stuck, remember the {\code{type()}} function.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E03}
+Write a short program that produces the following output:
+\begin{center}
+	{\code{Hello World!}}
+\end{center}
+
+
+\textit{Hints:
+Use the {\code{print()}} function.
+}\\[1cm]
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E04}
+
+Write a short program that prints your name, your favourite food and a hobby. For example:
+\begin{center}
+	{\code{Hello. My name is Cookie Monster. I like cookies and my\\ favourite hobby is not sharing my cookies.}}
+\end{center}
+
+
+\textit{Hints:
+Use the {\code{print()}} function.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E05}
+Write a short program that produces the following output:
+\begin{center}
+	{\code{Hello World!}}
+\end{center}
+But this time, use a \textbf{variable}.\\
+
+
+\textit{Hints:
+To generate a variable you will need the assignment operator {\code{=}}. Once you have stored the string inside the variable you can use the {\code{print()}} function to display it.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E06}
+Define two variables $a = 11$ and $b = 599$. Determine:
+\begin{enumerate}[label=(\alph*)]
+	\item  $a + b$
+	\item  $a - b$
+	\item  $a \cdot 10$
+	\item  $b / 4$
+	\item  $a + 15 - b \cdot 3$
+\end{enumerate}
+
+
+\textit{Hints:
+You will need to initialize two variables and then apply the addition, subtraction, multiplication and division operator to them.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E07:}
+Decide whether the following variable declarations are valid or not:
+
+\begin{enumerate}[label=(\alph*)]
+	\item {\code{\_ingredient = “Milk, flour, eggs”}}
+	\item {\code{london-population = 8800000}}
+	\item {\code{n = 3.14159}}
+	\item {\code{string = 100}}
+	\item {\code{apples\_amount = 10}}
+	\item {\code{uk\_\_\_\_\_\_\_\_\_capital = “London”}}
+	\item {\code{123456 = “123456”}}
+\end{enumerate}
+
+
+\textit{Hint:
+If you are uncertain, you could always try and type the variable declaration into a Jupyter Notebook. Try and run the command and check whether Python returns an error.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.E08}
+Write a short program that asks the user for their name and then simply prints it to the screen.\\
+
+
+\textit{Hints:
+You will need the {\code{input()}} and the {\code{print()}} function. You will also need to use a variable.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+\newpage
+\section{Difficulty: MEDIUM}
+
+
+\subsubsection*{Exercise 2.M01}
+Write a code that asks the user for their name and where they were born (city and country).
+Greet them with a message of the following format:\\
+\begin{center}
+	\code{“Hello [NAME] from [CITY] in [COUNTRY]! Nice to meet you.”}
+\end{center}
+
+
+\textit{Hints:
+Use the {\code{input()}} function to request user input and the {\code{print()}} function to display output on the screen. Remember that you can combine strings using the {\code{+}} operator (even within the {\code{print()}}) function.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.M02}
+Create a python script and using one command line only reproduce the following output:\\
+
+
+\hspace*{5mm}{\code{Night is now falling}}\\
+\hspace*{10mm}{\code{So ends this day}}\\
+\hspace*{15mm}{\code{The road is now calling}}\\
+\hspace*{20mm}{\code{And I must away}}\\
+
+
+\textit{Hint:
+You can use the {\code{print()}} function and spaces to reproduce above output. However, there is a quicker way of doing it: You can use the string formatters {\code{\textbackslash n}} and {\code{\textbackslash t}} to generate new lines and tabs.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.M03:}
+In this exercise you will generate a shopping list. You already know what you want to buy:\\
+Apples, tomatoes, cucumbers, beans, and eggs. But you will need to ask the user how many apples, tomatoes, cucumber etc. they want.\\
+Once you know the required number of each item print a shopping list that looks something like this:\\
+
+
+{\code{Shopping list:}}\\
+\hspace*{5mm}{\code{- Apples: 10}}\\
+\hspace*{5mm}{\code{- Tomatoes: 5}}\\
+\hspace*{5mm}{\code{- Cucumbers: 1}}\\
+\hspace*{5mm}{\code{- Can of beans: 1}}\\
+\hspace*{5mm}{\code{- Eggs: 6}}\\
+
+
+\textit{Hints:
+You will need the {\code{input()}} and the {\code{print()}} function several times. Alternatively, you can use the string formatters {\code{\textbackslash t}} and {\code{\textbackslash n}}. Remember that the \code{+} operator concatenates strings.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.M04}
+Copy the following commands into Jupyter Notebook. Run them one by one and try to
+understand the error message then fix them:\\
+
+\hspace*{5mm}(a) {\code{print(“Goodbye World’)}}\\
+\hspace*{5mm}(b) {\code{\# Calculating 1 + 99:}}\\
+\hspace*{12mm}{\code{print(99 + 1 =)}}\\
+\hspace*{5mm}(c) {\code{\# We can also print several strings within}}\\
+\hspace*{12mm}{\code{one print command:}}\\
+\hspace*{12mm}{\code{print(“Hello World” + “Goodbye World”)}}\\
+
+
+\textit{Hints:
+Python will usually show you rather accurately where the mistake is (either by giving the line or with a little arrow). Make sure to use this!}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.M05 \red{[M]}}
+Determine the result of:
+\begin{enumerate}[label=(\alph*)]
+	\item $(5+45)-(70-4+11)$
+	\item $10 \cdot 4^3$
+	\item $\frac{15}{0.1} + \frac{0.001}{34+22}$
+	\item $\frac{4}{1/5 +16} / \frac{10+3}{8\cdot 11 - 13/27}$
+\end{enumerate}
+
+
+\textit{Hints:
+Rewrite the mathematical symbols into addition, subtraction, multiplication, division operators. Remember to use brackets were appropriate.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.M06}
+Write a code that asks the user for their name and their age. Print a message greeting them and telling them in which year they will turn 100.\\
+
+
+\textit{Hints:
+Use the {\code{input()}} function to request user input and the {\code{print()}} function to display output on the screen. Remember that the {\code{input()}} function always returns a string. If you want to perform a mathematical operation on an input you will need to convert it into a number first using either {\code{int()}} or {\code{float()}.}}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.S01}
+Kermit, the Cookie Monster, and Big Bird have found a cookie stash. Kermit takes 10 cookies,
+Big Bird 15 and the Cookie Monster 45. Using variables, calculate how many cookies there are in total and display the result.\\
+
+
+\textit{Hints:
+You will need a variable for the number of cookies taken by each character and another
+variable for the total amount of cookies. Use the {\code{print()}} function to display the result but remember type conversion of a number into a string via {\code{str()}} if necessary.}\\[1cm]
+
+
+% ------------------------------------------------------------------------------
+
+
+\subsubsection*{Exercise 2.S02}
+Before a company can send out a delivery to a costumer, the name and address of the
+costumer need to be determined. Write a code that asks the costumer for their name,
+address, postcode, city and country. Then display the address on the screen.\\
+
+
+\textit{Hints:
+User the {\code{input()}} function to obtain user input and the {\code{print()}} function to display information.}\\[1cm]
+
+% ------------------------------------------------------------------------------
+
+
+
+\newpage
+\section{Difficulty: HARD}
+
+\subsubsection*{Exercise 2.H01 \red{[M]}}
+Write a code that requests two numbers from the user. Store the first number in variable
+{\code{var1}} and the second number in {\code{var2}}.
+Swap the values of the variables so that {\code{var1}} contains the second number and {\code{var2}} the
+first
+\begin{enumerate}[label=(\alph*)]
+	\item using an additional variable {\code{var3}}
+	\item without using an additional variable
+\end{enumerate}
+Can you think of a reason why (a) is better than (b)?\\
+
+
+\textit{Hints:
+Use the {\code{input()}} function to request user input. Remember to convert the strings returned by the {\code{input()}} function into numbers using either {\code{int()}} or {\code{float()}} if you want to perform mathematically operations on them. Try playing around with additions and subtractions to exchange the variable content without having to use an additional third variable.}\\[1cm]
+
+

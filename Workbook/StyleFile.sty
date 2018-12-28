@@ -1,0 +1,241 @@
+% ==============================================================================
+% StyleFile.sty
+% ==============================================================================
+%
+% AUTHOR:           F. Schmidt (Franziska.Schmidt@citylit.ac.uk)
+% CREATION DATE:    31.05.2018
+% PROJECT:          General LaTeX files
+% DESCRIPTION:      Provides some custom style settings for LaTeX
+% NOTES:            Resources:
+%						-> ToC: based on https://github.com/alexisflesch/nexus
+%
+% HISTORY:          31.05.2018: Script creation (F.Schmidt)
+%
+% ==============================================================================
+
+
+% LaTeX Version ----------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{StyleFile}
+% ------------------------------------------------------------------------------
+
+
+% Required Packages ------------------------------------------------------------
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{anyfontsize}							% Customize font size
+\RequirePackage[english]{babel}						% Dictionary
+\RequirePackage{color}
+\RequirePackage{enumitem}
+\RequirePackage{etoolbox}
+\RequirePackage{fancyhdr}								% Headers and Footers
+\RequirePackage{float}									% Positioning
+\RequirePackage{geometry}								% Page Geometry 
+\RequirePackage{graphicx}								% Graphics
+\RequirePackage{imakeidx}
+\RequirePackage[hidelinks]{hyperref}					% Links
+\RequirePackage{import}									% Include external file
+\RequirePackage{listings}								% Code in text
+\RequirePackage{mathtools}								% Mathtools
+\RequirePackage[letterspace=150]{microtype}			% Spacing in title
+\RequirePackage[absolute]{textpos}						% Set text positions	
+\RequirePackage{tgbonum}								% Font families
+\RequirePackage{titlesec} 
+\RequirePackage{titletoc}
+\RequirePackage{tikz}									% Layout Toolbox
+\RequirePackage{xcolor}									% Text colour
+
+\usepackage{lipsum}										% Dummy text
+% ------------------------------------------------------------------------------
+
+
+% Layout Options ---------------------------------------------------------------
+
+% Set page dimensions
+\geometry{a4paper,left=2.5cm,right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Avoid identations
+\parindent0pt
+
+% Change default font family
+\RequirePackage{lmodern}
+
+% Footer and header style
+\pagestyle{fancy}
+
+% Change default font of main text
+\renewcommand{\familydefault}{\sfdefault}
+
+% ------------------------------------------------------------------------------
+
+
+% Index Style ------------------------------------------------------------------
+\indexsetup{othercode=\small}
+\makeindex[program=makeindex,columns=3,intoc=false,options={-s LatexIndexStyle.ist}]
+% ------------------------------------------------------------------------------
+
+
+% User Defined Colours ---------------------------------------------------------
+\definecolor{titleBackground}{HTML}{592626}
+\definecolor{titleText}{HTML}{FFFFFF}
+\definecolor{mainText}{HTML}{000000}
+\definecolor{toDoColour}{HTML}{A32929}
+\definecolor{ToCBoxColour}{HTML}{592626}
+
+
+\definecolor{TOCChapterColour}{HTML}{FFFFFF}
+\definecolor{TOCSectionColour}{HTML}{FFFFFF}
+\definecolor{ChapterStyleColour}{HTML}{592626}
+\definecolor{HeaderColour}{HTML}{737373}
+\definecolor{FooterColour}{HTML}{737373}
+
+\definecolor{InfoBoxColor}{HTML}{592626}
+\definecolor{InfoBoxBackgroundColor}{HTML}{F7EDED}
+\definecolor{ExerciseBoxColor}{HTML}{63A6E9}
+\definecolor{ExerciseBoxBackgroundColor}{HTML}{E9F2FC}
+
+\definecolor{codeKeyword}{HTML}{800000}
+\definecolor{codeSection}{HTML}{002DB3}
+\definecolor{codeEnvironment}{HTML}{1A53FF}
+\definecolor{codeLine}{HTML}{000000}
+\definecolor{codeComment}{HTML}{737373}
+\definecolor{codeString}{HTML}{000000}
+\definecolor{codeBackground}{HTML}{FAFAEB}
+\definecolor{codeFrame}{HTML}{000000}
+% ------------------------------------------------------------------------------
+
+
+
+
+% User Defined Text Formatting -------------------------------------------------
+\newcommand*\chapterFont{\sffamily\Huge\color{ChapterStyleColour}}
+\newcommand*\chapterNumFont{\sffamily\Huge\color{ChapterStyleColour}}
+\newcommand*\chaperTitleFont{\sffamily\Huge\bfseries\color{ChapterStyleColour}}
+\newcommand*\headerFont{\sffamily\color{HeaderColour}}
+\newcommand*\footerFont{\sffamily\color{FooterColour}}
+\newcommand*\defaultFont{\sffamily}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+
+% ================ U S E R    D E F I N E D    C O M M A N D S =================
+
+
+% UDC: To Do Blocks ------------------------------------------------------------
+\newcommand{\todo}[1]{\textcolor{toDoColour}{\textbf{TO DO}: #1}}
+% ------------------------------------------------------------------------------
+
+% UDC: Blank Page --------------------------------------------------------------
+\newcommand{\blankpage}{\newpage\thispagestyle{empty}\mbox{}\newpage}
+% ------------------------------------------------------------------------------
+
+% UDC: Colour Text -------------------------------------------------------------
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+% ------------------------------------------------------------------------------
+
+% UDC: Code --------------------------------------------------------------------
+\newcommand*{\code}{\fontfamily{cmtt}\selectfont}
+% ------------------------------------------------------------------------------
+
+
+
+
+% ========================= T O C    S E T T I N G S ===========================
+
+
+% Depth of the ToC
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{5}
+
+% Chapter style in ToC ---------------------------------------------------------
+\titlecontents{chapter}[4pc] 
+% Spacing
+{\addvspace{20pt}\sffamily
+% Generate Chapter Box
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[fill=ToCBoxColour] (-5,-.2) rectangle (-0.8,0.6);
+    \pgftext[left,x=-3.3cm,y=0.2cm]{\color{white}CHAPTER \thecontentslabel};
+\end{tikzpicture}
+}{}{}
+{\;\titlerule\; Page}
+% ------------------------------------------------------------------------------
+
+
+
+% Section style in ToC ---------------------------------------------------------
+\titlecontents{section}[8pc]
+% Spacing 
+{\addvspace{5pt}\sffamily}
+{\contentslabel[\thecontentslabel]{2pc}\color{mainText}}
+{}
+{\hfill\small\thecontentspage\color{mainText}}
+[\addvspace{3pt}]
+% ------------------------------------------------------------------------------
+
+
+
+% Subsection style in ToC ------------------------------------------------------
+\titlecontents{subsection}[9.5pc]
+% Spacing
+{\addvspace{-1pt}\sffamily\footnotesize}
+{\contentslabel[\thecontentslabel]{2pc}\color{mainText}}
+{}
+{\hfill\footnotesize\thecontentspage\color{mainText}}
+% ------------------------------------------------------------------------------
+
+
+
+
+  
+% ================== H E A D E R S    A N D    F O O T E R S ===================
+\fancyhf{}
+\makeatletter
+	\renewcommand{\chaptermark}[1]{\markboth{}{\thechapter. \ #1}}
+\makeatother
+\fancyhead[LE,RO]{\small \headerFont \rightmark}
+\cfoot{\footerFont{\small \thepage}}
+\setlength{\headheight}{23pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+ \cfoot{\footerFont{\small \thepage}}
+  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+  \renewcommand{\footrulewidth}{0pt}% Line at the footer visible
+}
+
+
+
+
+
+% =============== C H A P T E R    T I T L E    S E T T I N G S ================
+
+% Depth of section numbering
+\setcounter{secnumdepth}{2}
+
+\titleformat{\chapter}[display]
+  {\filleft}
+  {{\chapterFont\chaptertitlename}
+  	\begin{color}[HTML]{592626}
+		\makebox[30pt][l]{\hspace{0cm}
+			\resizebox{!}{1.9cm}{\chapterNumFont\thechapter}%
+     		\hspace{0.3cm}
+     	 	\rule{5.0cm}{2.0cm}%
+   	 	}
+    \end{color}
+  }
+  {25pt}
+  {\chaperTitleFont}\titlespacing{\chapter}
+  {0pt}{40pt}{40pt}
+  
+% Add numbers to sections and subsections
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother  
+

@@ -1,0 +1,5 @@
+# This files contains a list of Irish provinces
+Connacht
+Leinster
+Munster
+Ulster

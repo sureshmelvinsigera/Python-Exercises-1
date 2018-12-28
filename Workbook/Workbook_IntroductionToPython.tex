@@ -1,0 +1,167 @@
+% ==============================================================================
+% Python Workbook
+% ==============================================================================
+%
+% AUTHOR:           F. Schmidt (www.astrofranzi.com)
+% CREATION DATE:    24.12.2018
+% PROJECT:          Outreach & Education
+% DESCRIPTION:      Workbook of Python Exercises
+% NOTES:            -
+%
+% HISTORY:          24.12.2018: Script creation (F.Schmidt)
+%
+% ==============================================================================
+
+
+
+
+
+% ----------------------- D O C U M E N T   S E T   U P ------------------------
+
+
+% Basic Setup ------------------------------------------------------------------
+\documentclass[
+  12pt,					% Default font size
+  a4paper,				% Format
+  twoside,				% Two-sided
+]{report}
+% ------------------------------------------------------------------------------
+
+% Style ------------------------------------------------------------------------
+\usepackage{StyleFile}
+% ------------------------------------------------------------------------------														 
+
+% Suppress Warnings ------------------------------------------------------------
+\hfuzz=1000pt 
+\hbadness=10000
+% ------------------------------------------------------------------------------
+
+
+
+
+
+% ----------------------------- D O C U M E N T --------------------------------
+
+\begin{document}
+
+% Title page -------------------------------------------------------------------
+
+\thispagestyle{empty}
+
+
+\begin{textblock}{1}(0,0)
+    \noindent\textcolor{titleBackground}{\rule{\paperwidth}{.45\paperheight}}
+\end{textblock}
+
+
+
+% Title
+{\fontsize{30}{40}{\textcolor{titleText}{\fontfamily{qag}\selectfont{\\[6.4cm]Workbook for\\[0.9cm]}}}}
+{\fontsize{35}{40}{\textcolor{titleText}{\lsstyle{\fontfamily{qag}\selectfont{\textbf{Introduction to Python}\\[1.5cm]}}}}}
+
+
+{\fontsize{16}{17.2}{\fontfamily{lmss}\selectfont{Exercises by}}}
+{\fontsize{16}{17.2}{\fontfamily{lmss}\selectfont{\textbf{\href{https://www.astrofranzi.com/}{Franziska Schmidt}\\}}}}
+{\fontsize{10}{10.2}{\fontfamily{lmss}\selectfont{Version 1.3 - December 2018\\[8cm]}}}
+
+
+
+
+
+\newpage
+% ------------------------------------------------------------------------------
+
+
+
+
+% Table of Content -------------------------------------------------------------
+\thispagestyle{plain}
+
+\tableofcontents
+
+\clearpage
+\newpage
+
+\pagenumbering{arabic}
+
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+% Individual Chapters ----------------------------------------------------------
+
+
+\chapter{Preface}
+The exercises in this workbook were designed for an 'Introduction to Python' course aimed at complete beginners. The course material itself is only available to course participants. If you are a course participant, you can download the lectures slides, demonstrations, and additional supporting material either from the Google Classroom or from here:\\ \url{https://www.astrofranzi.com/citylit-introduction-to-python/}.\\
+
+While the exercises are best used in combination with the course, they can also be used for independent study. I made an effort to come up with exercises you won't find in books or online, so hopefully you should be able to find new projects even if you've been using other online resources.\\
+
+The topics included in the workbook are:\\
+\textit{Basic operations, variables, output and input, string operators, math operators, libraries, logical operators, IF and ELSE statements, lists, loops, and file operations}.\\
+Note that neither \textit{functions} or \textit{classes} are included in the syllabus. I have included a couple of extra exercises covering functions and classes at the end but they are not very extensive as they are meant to be a backup only.\\
+While the solutions to the exercises won't make use of functions I highly recommend working with functions if you know how to.
+
+\paragraph{How to use this Workbook}
+This workbook is intended for absolute beginners with no prior knowledge of coding. If you do have some coding experience you will probably be able to skip some easier exercises. The chapter titles and hints below each exercise will point you to the knowledge required to solve the problems.\\
+If you are not taking the course, have a look at the tutorials listed below to learn the concepts before tackling the exercises:
+\begin{itemize}
+    \item \url{https://www.tutorialspoint.com/python/}
+    \item \url{https://www.learnpython.org/}
+\end{itemize}
+The exercises themselves are divided into three  levels of difficulty:
+
+\begin{itemize}
+    \item \textbf{EASY}: These exercises represent a gentle introduction to a new topic. I recommend starting with these exercises unless you already feel more confident.
+    \item \textbf{MEDIUM}: These exercises will ask you to apply what you've learned with some level of abstraction.
+    \item \textbf{HARD}: These exercises will ask you to apply what you've learned to solve a more complex problem and are intended for learners looking for something a bit more challenging.
+\end{itemize}
+
+Additionally, some exercises will be marked with a red \red{\textbf{M}}. This indicates that the exercises contain more advanced mathematical concepts that might be unsuitable for some learners. Feel free to skip these if you're not comfortable with maths.
+
+
+\paragraph{Solutions}
+The workbook and solutions are available on my public GitHub account: \url{https://github.com/fdschmidt/PythonExercises}. All solutions are provided in the form of Jupyter Notebooks and Python scripts.\\
+Solutions to exercises are tailored to the content covered in the course. If you learn using a different source, you might be able to solve the exercise more efficiently (e.g. with function).\\
+If an exercise requires input files you can download these from the same folder as the solutions.
+
+\paragraph{How to Get in Touch}
+For enquiries please get in touch via the contact form on my website or send me an email: \url{https://www.astrofranzi.com/contact/}.
+
+
+\vspace*{\fill}
+\begin{center}
+\textit{If you use this workbook for anything outside of what would be considered "Private Use" please give credit where appropriate. Thank you.}
+\end{center}
+
+
+
+		
+\import{Unit-02_OutputAndInput/}{Script_Unit-02_OutputAndInput}		
+\import{Unit-03_StringOperators/}{Script_Unit-03_StringOperators}
+\import{Unit-04_MathOperators/}{Script_Unit-04_MathOperators}	 \import{Unit-05_LogicalOperators/}{Script_Unit-05_LogicalOperators}
+\import{Unit-06_IFandLESE/}{Script_Unit-06_IFandELSE}
+\import{Unit-07_Lists/}{Script_Unit-07_Lists}
+\import{Unit-08_Loops/}{Script_Unit-8_Loops}
+\import{Unit-09_FileOperations/}{Script_Unit-9_FileOperations} 
+\import{Unit-10_Functions/}{Script_Unit-10_Functions}
+\import{Unit-11_Classes/}{Script_Unit-11_Classes}
+
+
+% ------------------------------------------------------------------------------
+
+
+
+% Special pages ----------------------------------------------------------------
+\thispagestyle{plain}
+
+
+
+% Index
+\printindex
+% ------------------------------------------------------------------------------
+
+
+\end{document}

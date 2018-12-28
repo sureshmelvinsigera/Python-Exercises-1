@@ -1,0 +1,44 @@
+\chapter{Bonus: Classes}\label{CHAP_Classes}
+
+\section{Difficulty: MEDIUM}
+
+\subsubsection*{Exercise 11.01}
+Generate a class {\code{Dog}}. The class should contain the attributes name, age and breed. Include a function {\code{DisplayInformation()}} that displays the object information like this:
+{\code{"[Name] is [YEARS] years old and a [BREED]"}}, where {\code{[Name]}}, {\code{[YEARS]}} and {\code{[BREED]}} are place holders.\\
+
+
+\textit{Hints:
+Remember the {\code\_\_init\_\_()} method as well as the getters and setters.}\\[1cm]
+
+% ------------------------------------------------------------------------------
+
+\subsubsection*{Exercise 11.02}
+Generate a class {\code{Vehicle}}. The class contains the attribute {\code{value}}. Then generate the child classes: {\code{Car}} and {\code{Bicycle}}. The {\code{Car}} child class contains the attribute {\code{brand}}, the {\code{Bicycle}} child class contains the attribute {\code{colour}}.\\
+
+\textit{Hints:
+Remember the {\code\_\_init\_\_()} method as well as the getters and setters. for new attributes in the child classes.}\\[1cm]
+
+% ------------------------------------------------------------------------------
+
+\subsubsection*{Exercise 11.03 \red{[M]}}
+A complex number can be expressed as
+\begin{center}
+	$a + i \cdot b$
+\end{center}
+where $a$ and $b$ are real numbers and $i$ is the imaginary number which solves $i^2 = -1$.\\
+Generate a class {\code{Complex}}. The class contains the attributes {\code{real}} and {\code{imaginary}}. The real attribute corresponds to $a$, the imaginary attribute corresponds to $b$.\\
+Add a function {\code{DisplayImaginaryNumber()}} that prints your number in the following
+format: {\code{a + i * b}} where {\code{a}} and {\code{b}} are place holder.\\
+Add a function {\code{AddImaginaryNumbers()}} that adds two {\code{Complex}} objects together. To add
+two Complex objects together do:
+\begin{center}
+	$(a + i \cdot b) + (c + i \cdot d) = (a + c) + i \cdot (b + d)$
+\end{center}
+Add a function {\code{SubtractImaginaryNumbers()}} that subtracts two {\code{Complex}} objects from each other. To subtract two {\code{Complex}} objects do:
+\begin{center}
+	$(a + i \cdot b) - (c + i \cdot d) = (a - c) + i \cdot (b - d)$
+\end{center}
+
+\textit{
+Hints:
+This exercise requires more advanced mathematical knowledge, skip it if you’re not comfortable with the concepts shown here.}
