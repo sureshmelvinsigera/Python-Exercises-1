@@ -1,42 +1,42 @@
-\babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Preface}{1}{chapter.1}% 
-\contentsline {paragraph}{How to use this Workbook}{1}{chapter.1}% 
-\contentsline {paragraph}{Solutions}{2}{chapter.1}% 
-\contentsline {paragraph}{How to Get in Touch}{2}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Output and Input}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Difficulty: EASY}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Difficulty: MEDIUM}{6}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Difficulty: HARD}{9}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}String Operators}{10}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Difficulty: EASY}{10}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Difficulty: MEDIUM}{14}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Difficulty: HARD}{18}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Math Operators and Libraries}{19}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Difficulty: EASY}{19}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Difficulty: MEDIUM}{22}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Difficulty: HARD}{26}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Logical Operators}{28}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Difficulty: EASY}{28}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Difficulty: MEDIUM}{30}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Difficulty: HARD}{33}{section.5.3}% 
-\contentsline {chapter}{\numberline {6}IF and ELSE Statements}{34}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Difficulty: EASY}{34}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Difficulty: MEDIUM}{36}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Difficulty: HARD}{38}{section.6.3}% 
-\contentsline {chapter}{\numberline {7}Lists}{40}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Difficulty: EASY}{40}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Difficulty: MEDIUM}{43}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}Difficulty: HARD}{47}{section.7.3}% 
-\contentsline {chapter}{\numberline {8}Loops}{48}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}Difficulty: EASY}{48}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Difficulty: MEDIUM}{50}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Difficulty: HARD}{55}{section.8.3}% 
-\contentsline {chapter}{\numberline {9}File Operations}{58}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Difficulty: EASY}{58}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Difficulty: MEDIUM}{60}{section.9.2}% 
-\contentsline {section}{\numberline {9.3}Difficulty: HARD}{64}{section.9.3}% 
-\contentsline {chapter}{\numberline {10}Bonus: Functions}{65}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Difficulty: MEDIUM}{65}{section.10.1}% 
-\contentsline {chapter}{\numberline {11}Bonus: Classes}{67}{chapter.11}% 
-\contentsline {section}{\numberline {11.1}Difficulty: MEDIUM}{67}{section.11.1}% 
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Preface}{1}{chapter.1}
+\contentsline {paragraph}{How to use this Workbook}{1}{chapter.1}
+\contentsline {paragraph}{Solutions}{2}{chapter.1}
+\contentsline {paragraph}{How to Get in Touch}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Output and Input}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Difficulty: EASY}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Difficulty: MEDIUM}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Difficulty: HARD}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}String Operators}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Difficulty: EASY}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Difficulty: MEDIUM}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Difficulty: HARD}{18}{section.3.3}
+\contentsline {chapter}{\numberline {4}Math Operators and Libraries}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Difficulty: EASY}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Difficulty: MEDIUM}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Difficulty: HARD}{26}{section.4.3}
+\contentsline {chapter}{\numberline {5}Logical Operators}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Difficulty: EASY}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Difficulty: MEDIUM}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}Difficulty: HARD}{33}{section.5.3}
+\contentsline {chapter}{\numberline {6}IF and ELSE Statements}{34}{chapter.6}
+\contentsline {section}{\numberline {6.1}Difficulty: EASY}{34}{section.6.1}
+\contentsline {section}{\numberline {6.2}Difficulty: MEDIUM}{36}{section.6.2}
+\contentsline {section}{\numberline {6.3}Difficulty: HARD}{38}{section.6.3}
+\contentsline {chapter}{\numberline {7}Lists}{40}{chapter.7}
+\contentsline {section}{\numberline {7.1}Difficulty: EASY}{40}{section.7.1}
+\contentsline {section}{\numberline {7.2}Difficulty: MEDIUM}{43}{section.7.2}
+\contentsline {section}{\numberline {7.3}Difficulty: HARD}{47}{section.7.3}
+\contentsline {chapter}{\numberline {8}Loops}{48}{chapter.8}
+\contentsline {section}{\numberline {8.1}Difficulty: EASY}{48}{section.8.1}
+\contentsline {section}{\numberline {8.2}Difficulty: MEDIUM}{50}{section.8.2}
+\contentsline {section}{\numberline {8.3}Difficulty: HARD}{55}{section.8.3}
+\contentsline {chapter}{\numberline {9}File Operations}{58}{chapter.9}
+\contentsline {section}{\numberline {9.1}Difficulty: EASY}{58}{section.9.1}
+\contentsline {section}{\numberline {9.2}Difficulty: MEDIUM}{60}{section.9.2}
+\contentsline {section}{\numberline {9.3}Difficulty: HARD}{64}{section.9.3}
+\contentsline {chapter}{\numberline {10}Bonus: Functions}{65}{chapter.10}
+\contentsline {section}{\numberline {10.1}Difficulty: MEDIUM}{65}{section.10.1}
+\contentsline {chapter}{\numberline {11}Bonus: Classes}{67}{chapter.11}
+\contentsline {section}{\numberline {11.1}Difficulty: MEDIUM}{67}{section.11.1}
 \contentsfinish 
