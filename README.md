@@ -1,4 +1,5 @@
 # Python Exercises
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fdschmidt/PythonExercises/master)
 
 A collection of 100+ Python exercises (including solutions) covering: Basic 
 operations, variables, output and input, string operators, math operators, 
